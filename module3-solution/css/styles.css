@@ -1,0 +1,5 @@
+body .navbar{
+    background-color: maroon;
+    text-decoration: none;
+    justify-content: flex-end;
+}
