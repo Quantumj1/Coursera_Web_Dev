@@ -1,5 +1,10 @@
-body .navbar{
-    background-color: maroon;
+body {
+    color: brown;
+}
+
+.navbar{
+    background-color: yellow;
     text-decoration: none;
     justify-content: flex-end;
 }
+
