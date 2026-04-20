@@ -19,7 +19,8 @@ body {
 }
 .navbar-brand h1{
     padding: 0;
-    color: black;
+    color: green;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
     font-size: 2em;
     text-transform: uppercase;
     margin-top: 0;
@@ -43,15 +44,17 @@ body {
 }
 #nav-list {
     padding: 0;
-    margin: 0;
-    list-style: none;
+    margin-top: 20px;
 }
 #nav-list a {
-    color: black;
+    color: maroon;
+    font-weight: bold;
     text-align: center;
 }
+#nav-list a span {
+    font-size: 1.5em;
+}
 #nav-list li {
-    display: inline-block;
     margin-right: 15px;
 }
 #phone {
@@ -59,7 +62,7 @@ body {
 }
 #phone a {
     text-align: right;
-    font-size: 1.2em;
+    font-size: 1em;
     padding-bottom: 0px;
 }
 #phone div {
@@ -67,4 +70,61 @@ body {
     padding-right: 15px;
     font-size: 0.8em;
     text-align: right;
+}
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+    border: 1px solid maroon;
+}
+.navbar-header button.navbar-toggle {
+    clear: both;
+    margin-top: -30px;
+}
+/***************Large Screen Styles ***************/
+@media (min-width: 1200px) {
+    #header-nav {
+        background-color: yellow;
+    }
+    #logo {
+        width: 150px;
+        height: 150px;
+    }
+    .navbar-brand h1 {
+        font-size: 2.5em;
+    }
+    .navbar-brand p {
+        font-size: 0.8em;
+    }
+    #nav-list a {
+        font-size: 1.2em;
+    }
+    #phone a {
+        font-size: 1.2em;
+    }
+}
+/***************Medium Screen Styles ***************/
+@media (min-width: 992px) and (max-width: 1199px) {
+    #logo {
+        background: url('../images/restaurant-logo_medium.png') no-repeat;
+        width: 100px;
+        height: 100px;
+        margin: 5px 5px 5px 0px;
+    }
+}
+/***************Small Screen Styles ***************/
+@media (max-width: 767px) {
+    #navbar-brand {
+        padding-top: 10px;
+        height: 80px;
+    }
+    #navbar-brand h1 {
+        padding-top: 10px;
+        font-size: 5vw;
+    }
+    #navbar-brand p {
+        font-size: 3vw;
+        margin-top: 12px
+    }
+    #navbar-brand p img {
+        height: 20px;
+    }
+    
 }
