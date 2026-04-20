@@ -11,7 +11,7 @@
     <header>
         <!--navbar-->
         <nav class="navbar navbar-default" id="header-nav">
-        <div class="container-fluid">
+        <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
                 <a href="index.html" class="pull-left">
@@ -22,27 +22,42 @@
                     <p><img src="images/star-k-logo.png" alt="Ellie's LLC Logo">Certified</p>
                 </div>
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" 
-                data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                data-target="#collapsable-nav" aria-expanded="false">
                     <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar">Home</span>
-                    <span class="icon-bar">Lunch</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav navbar-right">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-            </div><!-- /.navbar-collapse -->
-        </div><!-- /.container-fluid -->
+            <div class="collapse navbar-collapse" id="collapsable-nav">
+                <ul class="nav navbar-nav navbar-right" id="nav-list">
+                    <li>
+                        <a href="index.html"><span class="glyphicon glyphicon-home"></span><br class="hidden-xs">Home</a>
+                    </li>
+                    <li>
+                        <a href="menu_categories.html"><span class="glyphicon glyphicon-cultery"></span><br 
+                            class="hidden-xs">
+                            Menu</a>
+                    </li>
+                    <li>
+                        <a href="#"><span class="glyphicon glyphicon-info-sign"></span><br class="hidden-xs">About</a>
+                    </li>
+                    <li>
+                        <a href="#"><span class="glyphicon glyphicon-certificate"></span><br class="hidden-xs">Awards</a>
+                    </li>
+                    <li id="phone" class="hidden-xs">
+                        <a href="tel:+233248640124"><span>+233248640124</span><div>We deliver</div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
         </nav>
     </header>
-    <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>
