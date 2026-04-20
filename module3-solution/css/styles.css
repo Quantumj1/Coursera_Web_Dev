@@ -82,6 +82,40 @@ body {
   margin-top: -30px;
 }
 /* END HEADER */
+/*HOME PAGE*/
+.menu-tile, .special-tile, .map-tile {
+  height: 250px;
+  width: 100%;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  overflow: hidden;
+  position:relative;
+}
+.menu-tile:hover, .special-tile:hover, .map-tile:hover {
+  border-color: #f6b319;
+  box-shadow: 0 0 10px #f6b319;
+}
+
+#menu-tile {  
+  background: url('../images/menu-tile.jpg') no-repeat;  
+  background-position: center;
+}
+#special-tile {
+  background: url('../images/specials-tile.jpg') no-repeat;
+  background-position: center;
+}
+#menu-tile span, #special-tile span, #map-tile span {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  text-align: center;
+  width: 100%;
+  background-color: rgba(97, 18, 47, .8);
+  color: #fff;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  padding: 10px;
+}
 
 /********** Large devices only **********/
 @media (min-width: 1200px) {
@@ -126,7 +160,6 @@ body {
   /* Header */
   .container .jumbotron {
     padding: 0;
-    height: 300px;
     box-shadow: 0 0 10px #222;
   }
   .navbar-brand {
@@ -168,6 +201,39 @@ body {
     letter-spacing: .1em;
     text-transform: uppercase;
   }
+
+  #menu-tile, #special-tile {
+    width: 330px;
+    margin: auto;
+    margin-bottom: 10px;
+  }
+
   /* End Header */
 
+}
+
+/* FOOTER SECTIONS */
+.footer {
+  background-color: #222;
+  color: #fff;
+  padding: 20px 0;
+  border: 2px solid #222;
+}
+#hours, #location, #testimonial {
+  text-align: center;
+  padding-right: 30px;
+}
+#hours span, #location span, #testimonial span {
+  font-weight: bold;
+}
+.text-center {
+  margin-top: 20px;
+}
+@media (max-width: 767px) {
+  #hours, #location {
+    text-align: center;
+    border-right: none;
+    padding-right: 0;
+    margin-bottom: 10px;
+  }
 }
