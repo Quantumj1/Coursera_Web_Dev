@@ -85,7 +85,12 @@ body {
 
 /********** Large devices only **********/
 @media (min-width: 1200px) {
-
+  .container .jumbotron {
+    background: url('../images/jumbotron_1200.jpg') no-repeat;
+    background-size: cover;
+    height: 600px;
+    box-shadow: 0 0 10px #222;
+  }
 }
 
 /********** Medium devices only **********/
@@ -97,30 +102,46 @@ body {
     height: 100px;
     margin: 5px 5px 5px 0;
   }
+  .container .jumbotron {
+    background: url('../images/jumbotron_992.jpg') no-repeat;
+    background-size: cover;
+    height: 558px;
+    box-shadow: 0 0 10px #222;
+  }
   /* End Header */
 }
 
 /********** Small devices only **********/
 @media (min-width: 768px) and (max-width: 991px) {
-
+  .container .jumbotron {
+    background: url('../images/jumbotron_992.jpg') no-repeat;
+    background-size: cover;
+    height: 600px;
+    box-shadow: 0 0 10px #222;
+  }
 }
 
 /********** Extra small devices only **********/
 @media (max-width: 767px) {
   /* Header */
+  .container .jumbotron {
+    padding: 0;
+    height: 300px;
+    box-shadow: 0 0 10px #222;
+  }
   .navbar-brand {
     padding-top: 10px;
     height: 80px;
   }
   .navbar-brand h1 { /* Restaurant name */
     padding-top: 10px;
-    font-size: 5vw; /* 1vw = 1% of viewport width */
+    font-size: 5vw; 
   }
-  .navbar-brand p { /* Kosher cert */
+  .navbar-brand p { 
     font-size: .6em;
     margin-top: 12px;
   }
-  .navbar-brand p img { /* Star-K */
+  .navbar-brand p img { 
     height: 20px;
   }
 
