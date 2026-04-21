@@ -260,17 +260,17 @@ h3.menu-item-title {
 }
 
 /* FOOTER SECTIONS */
-.footer {
+.panel-footer {
   background-color: #222;
   color: #fff;
   padding: 20px 0;
   border: 2px solid #222;
 }
-#hours, #location, #testimonial {
+#hours, #address, #testimonials {
   text-align: center;
   padding-right: 30px;
 }
-#hours span, #location span, #testimonial span {
+#hours span, #address span, #testimonials span {
   font-weight: bold;
 }
 .text-center {
