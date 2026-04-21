@@ -117,6 +117,50 @@ body {
   padding: 10px;
 }
 
+/*Single Category Page Styles */
+.menu-item-title{
+  margin-bottom: 25px;
+}
+.menu-item-title hr{
+  width: 80px;
+}
+.menu-item-title .menu-item-price {
+  font-size: 1.2em;
+  margin-right: -15px;
+  margin-top: -15px;
+  text-align: right;
+}
+.menu-item-title .menu-item-price span {
+  font-size: 0.6em;
+}
+.menu-item-photo {
+  position: relative;
+  border: 2px solid #ccc;
+  overflow: hidden;
+  padding: 0;
+  margin-right: -15px;
+  margin-left: auto;
+  margin-bottom: 20px;
+  max-width: 250px;
+}
+.menu-item-photo div{
+  position:absolute;
+  bottom: 0;
+  right: 0;
+  width: 80px;
+  background-color: #557c3c;
+  text-align: center;
+}
+.menu-item-description {
+  padding-right: 30px;
+}
+h3.menu-item-title {
+  margin: 0 0 10px
+}
+.menu-items-details {
+  font-size: 0.9em;
+  font-style: italic;
+}
 
 /********** Large devices only **********/
 @media (min-width: 1200px) {
