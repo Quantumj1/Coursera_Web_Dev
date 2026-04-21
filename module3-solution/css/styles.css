@@ -117,6 +117,7 @@ body {
   padding: 10px;
 }
 
+
 /********** Large devices only **********/
 @media (min-width: 1200px) {
   .container .jumbotron {
@@ -125,6 +126,8 @@ body {
     height: 600px;
     box-shadow: 0 0 10px #222;
   }
+
+  
 }
 
 /********** Medium devices only **********/
