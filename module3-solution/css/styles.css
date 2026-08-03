@@ -151,6 +151,81 @@ body {
   padding: 10px;
 }
 
+/* About Page Styles */
+#page-title {
+  font-family: 'Lora', serif;
+  color: #f6b319;
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+.title-divider {
+  border-top: 1px solid #951C49;
+  margin-top: 15px;
+  margin-bottom: 25px;
+}
+.about-content p {
+  color: #fff;
+  font-size: 1em;
+  line-height: 1.6;
+}
+.about-heading {
+  font-family: 'Lora', serif;
+  color: #f6b319;
+  font-size: 1.4em;
+  margin-top: 0;
+}
+.about-photo {
+  border: 2px solid #951C49;
+  box-shadow: 0 0 5px #222;
+  max-width: 250px;
+  margin-bottom: 20px;
+}
+.about-contact p, .about-hours p, .about-delivery p {
+  font-size: 0.95em;
+}
+.about-contact a {
+  color: #f6b319;
+}
+
+/* Awards Page Styles */
+.award-item {
+  border: 2px solid #951C49;
+  background-color: #7a1f3f;
+  box-shadow: 0 0 5px #222;
+  padding: 0;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+.award-item:hover {
+  border-color: #f6b319;
+  box-shadow: 0 0 10px #f6b319;
+}
+.award-year {
+  background-color: #557c3e;
+  color: #fff;
+  font-family: 'Lora', serif;
+  font-size: 1.3em;
+  font-weight: bold;
+  text-align: center;
+  padding: 10px;
+}
+.award-body {
+  padding: 15px;
+}
+.award-title {
+  font-family: 'Lora', serif;
+  color: #f6b319;
+  font-size: 1.3em;
+  margin-top: 0;
+  margin-bottom: 8px;
+}
+.award-details {
+  color: #fff;
+  font-size: 0.95em;
+  line-height: 1.5;
+  margin-bottom: 0;
+}
+
 /*Single Category Page Styles */
 .menu-item-title{
   margin-bottom: 25px;
