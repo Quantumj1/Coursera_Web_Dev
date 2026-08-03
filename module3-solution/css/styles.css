@@ -117,6 +117,40 @@ body {
   padding: 10px;
 }
 
+/* Menu Categories Page */
+#menu-categories-title {
+  font-family: 'Lora', serif;
+  color: #f6b319;
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+.category-tile {
+  height: 250px;
+  width: 100%;
+  margin-bottom: 15px;
+  border: 2px solid #3F0E1F;
+  overflow: hidden;
+  position: relative;
+  background: #951C49;
+  box-shadow: 0 0 5px #222;
+}
+.category-tile:hover {
+  border-color: #f6b319;
+  box-shadow: 0 0 10px #f6b319;
+}
+.category-tile span {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  text-align: center;
+  width: 100%;
+  background-color: rgba(97, 18, 47, .8);
+  color: #fff;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  padding: 10px;
+}
+
 /*Single Category Page Styles */
 .menu-item-title{
   margin-bottom: 25px;
@@ -265,6 +299,10 @@ h3.menu-item-title {
   color: #fff;
   padding: 20px 0;
   border: 2px solid #222;
+  margin-top: 30px;
+}
+.panel-footer .text-center {
+  margin-top: 20px;
 }
 #hours, #address, #testimonials {
   text-align: center;
@@ -273,13 +311,9 @@ h3.menu-item-title {
 #hours span, #address span, #testimonials span {
   font-weight: bold;
 }
-.text-center {
-  margin-top: 20px;
-}
 @media (max-width: 767px) {
-  #hours, #location {
-    text-align: center;
-    border-right: none;
+  #hours, #address, #testimonials {
+    text-align: left;
     padding-right: 0;
     margin-bottom: 10px;
   }
