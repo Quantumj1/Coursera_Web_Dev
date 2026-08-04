@@ -416,6 +416,13 @@ h3.menu-item-title {
     height: 600px;
     box-shadow: 0 0 10px #222;
   }
+
+  /* Center the menu items on the single-category page */
+  .menu-item-tile {
+    float: none;
+    margin: 0 auto 15px;
+    max-width: 600px;
+  }
 }
 
 /********** Extra small devices only **********/
