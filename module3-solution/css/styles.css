@@ -118,7 +118,7 @@ body {
 }
 
 /* Menu Categories Page */
-#menu-categories-title {
+#menu-categories-title, #single-category-title {
   font-family: 'Lora', serif;
   color: #f6b319;
   font-size: 2em;
@@ -149,6 +149,24 @@ body {
   font-size: 1.5em;
   text-transform: uppercase;
   padding: 10px;
+}
+#cat-L {
+  background: url('../images/menu/B/B-1.jpg') no-repeat center #951C49;
+}
+#cat-D {
+  background: url('../images/menu/C/C-1.jpg') no-repeat center #951C49;
+}
+#cat-S {
+  background: url('../images/menu/SO/SO-1.jpg') no-repeat center #951C49;
+}
+#cat-A {
+  background: url('../images/menu/A/A-1.jpg') no-repeat center #951C49;
+}
+#cat-Ds {
+  background: url('../images/menu/SS/SS-1.jpg') no-repeat center #951C49;
+}
+#cat-Dr {
+  background: url('../images/menu/F/F-1.jpg') no-repeat center #951C49;
 }
 
 /* About Page Styles */
@@ -224,6 +242,95 @@ body {
   font-size: 0.95em;
   line-height: 1.5;
   margin-bottom: 0;
+}
+
+/* Breadcrumb Bar */
+#breadcrumb-bar {
+  background-color: #3F0E1F;
+  border: 1px solid #951C49;
+  border-radius: 4px;
+  margin-top: 15px;
+  margin-bottom: 25px;
+  padding: 4px 15px;
+}
+#breadcrumb-bar .breadcrumb {
+  background-color: transparent;
+  margin-bottom: 0;
+  padding: 8px 0;
+}
+#breadcrumb-bar .breadcrumb > li a {
+  color: #f6b319;
+}
+#breadcrumb-bar .breadcrumb > .active {
+  color: #fff;
+}
+#breadcrumb-bar .breadcrumb > li + li::before {
+  color: #f6b319;
+}
+
+/* Specials Page Styles */
+.special-item {
+  border: 2px solid #951C49;
+  background-color: #7a1f3f;
+  box-shadow: 0 0 5px #222;
+  padding: 15px;
+  margin-bottom: 20px;
+  text-align: center;
+  overflow: hidden;
+}
+.special-item:hover {
+  border-color: #f6b319;
+  box-shadow: 0 0 10px #f6b319;
+}
+.special-photo {
+  position: relative;
+  border: 2px solid #ccc;
+  overflow: hidden;
+  padding: 0;
+  max-width: 250px;
+  margin: 0 auto 15px;
+}
+.special-photo span {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 80px;
+  background-color: #557c3c;
+  text-align: center;
+}
+.special-label {
+  font-size: 1.1em;
+  font-weight: bold;
+  color: #f6b319;
+  margin-bottom: 8px;
+}
+.special-title {
+  font-family: 'Lora', serif;
+  color: #fff;
+  font-size: 1.3em;
+  margin-top: 0;
+  margin-bottom: 8px;
+}
+.special-details {
+  color: #fff;
+  font-size: 0.95em;
+  line-height: 1.5;
+  margin-bottom: 0;
+}
+.special-subtitle {
+  font-family: 'Lora', serif;
+  color: #f6b319;
+  font-size: 1.1em;
+  margin-bottom: 10px;
+}
+.specials-note {
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+.specials-note .btn-warning {
+  background-color: #f6b319;
+  border-color: #f6b319;
+  color: #61122f;
 }
 
 /*Single Category Page Styles */

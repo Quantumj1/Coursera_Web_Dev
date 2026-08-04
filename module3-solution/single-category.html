@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>David Chu's China Bistro</title>
+    <title>Menu | David Chu's China Bistro</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/styles.css">
     <link href='https://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>
@@ -68,33 +68,24 @@
   <div id="xs-deliver" class="text-center visible-xs">* We Deliver</div>
 
   <div id="main-content" class="container">
-    <h2 id="menu-categories-title" class="text-center">Lunch Menu</h2>
-    <div class="text-center">Lunch is not served until after 1pm.</div>
+    <div id="breadcrumb-bar">
+      <ol class="breadcrumb">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu_categories.html">Menu</a></li>
+        <li class="active" id="breadcrumb-category">Lunch</li>
+      </ol>
+    </div>
 
-    <section class="row">
-      <div class="menu-item-tile col-md-6">
+    <h2 id="single-category-title" class="text-center">Lunch Menu</h2>
+    <div class="text-center" id="single-category-subtitle">Lunch is not served until after 1pm.</div>
+
+    <section class="row" id="menu-items-container">
+      <div class="menu-item-tile col-md-6" data-item-index="0">
         <div class="row">
           <div class="col-sm-5">
             <div class="menu-item-photo">
-              <div>D01</div>
-              <img class="img-responsive" width="250" height="150" src="images/menu/B/B-1.jpg" alt="Item">
-            </div>
-            <div class="menu-item-price">$10.95<span> (pint)</span> $14.95 <span>(quart)</span></div>
-          </div>
-          <div class="menu-item-description col-sm-7">
-            <h3 class="menu-item-title">Veal with Mixed Vegetables</h3>
-            <p class="menu-item-details">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque inventore esse minima incidunt impedit. Asperiores, voluptatem. Sint aspernatur provident, rem odio dolorem eaque voluptatibus modi reprehenderit minima, itaque cupiditate totam.Asperiores, voluptatem. Sint aspernatur provident, rem odio dolorem eaque voluptatibus modi reprehenderit minima, itaque cupiditate totam.Asperiores, voluptatem. Sint aspernatur provident, rem odio dolorem eaque voluptatibus modi reprehenderit minima, itaque cupiditate totam.</p>
-          </div>
-        </div>
-        <hr class="visible-xs">
-      </div>
-      
-      <div class="menu-item-tile col-md-6">
-        <div class="row">
-          <div class="col-sm-5">
-            <div class="menu-item-photo">
-              <div>D02</div>
-              <img class="img-responsive" width="250" height="150" src="images/menu/B/B-1.jpg" alt="Item">
+              <div class="menu-item-number">D01</div>
+              <img class="img-responsive menu-item-img" width="250" height="150" src="images/menu/B/B-1.jpg" alt="Item">
             </div>
             <div class="menu-item-price">$10.95<span> (pint)</span> $14.95 <span>(quart)</span></div>
           </div>
@@ -105,31 +96,13 @@
         </div>
         <hr class="visible-xs">
       </div>
-      <!-- Add after every 2nd menu-item-tile -->
-      <div class="clearfix visible-lg-block visible-md-block"></div>
-      <div class="menu-item-tile col-md-6">
+
+      <div class="menu-item-tile col-md-6" data-item-index="1">
         <div class="row">
           <div class="col-sm-5">
             <div class="menu-item-photo">
-              <div>D03</div>
-              <img class="img-responsive" width="250" height="150" src="images/menu/B/B-1.jpg" alt="Item">
-            </div>
-            <div class="menu-item-price">$10.95<span> (pint)</span> $14.95 <span>(quart)</span></div>
-          </div>
-          <div class="menu-item-description col-sm-7">
-            <h3 class="menu-item-title">Veal with Mixed Vegetables</h3>
-            <p class="menu-item-details">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque inventore esse minima incidunt impedit. Asperiores, voluptatem. Sint aspernatur provident, rem odio dolorem eaque voluptatibus modi reprehenderit minima, itaque cupiditate totam.</p>
-          </div>
-        </div>
-        <hr class="visible-xs">
-      </div>
-      
-      <div class="menu-item-tile col-md-6">
-        <div class="row">
-          <div class="col-sm-5">
-            <div class="menu-item-photo">
-              <div>D04</div>
-              <img class="img-responsive" width="250" height="150" src="images/menu/B/B-1.jpg" alt="Item">
+              <div class="menu-item-number">D02</div>
+              <img class="img-responsive menu-item-img" width="250" height="150" src="images/menu/B/B-1.jpg" alt="Item">
             </div>
             <div class="menu-item-price">$10.95<span> (pint)</span> $14.95 <span>(quart)</span></div>
           </div>
@@ -143,12 +116,12 @@
       <!-- Add after every 2nd menu-item-tile -->
       <div class="clearfix visible-lg-block visible-md-block"></div>
 
-      <div class="menu-item-tile col-md-6">
+      <div class="menu-item-tile col-md-6" data-item-index="2">
         <div class="row">
           <div class="col-sm-5">
             <div class="menu-item-photo">
-              <div>D05</div>
-              <img class="img-responsive" width="250" height="150" src="images/menu/B/B-1.jpg" alt="Item">
+              <div class="menu-item-number">D03</div>
+              <img class="img-responsive menu-item-img" width="250" height="150" src="images/menu/B/B-1.jpg" alt="Item">
             </div>
             <div class="menu-item-price">$10.95<span> (pint)</span> $14.95 <span>(quart)</span></div>
           </div>
@@ -159,12 +132,13 @@
         </div>
         <hr class="visible-xs">
       </div>
-      <div class="menu-item-tile col-md-6">
+
+      <div class="menu-item-tile col-md-6" data-item-index="3">
         <div class="row">
           <div class="col-sm-5">
             <div class="menu-item-photo">
-              <div>D06</div>
-              <img class="img-responsive" width="250" height="150" src="images/menu/B/B-1.jpg" alt="Item">
+              <div class="menu-item-number">D04</div>
+              <img class="img-responsive menu-item-img" width="250" height="150" src="images/menu/B/B-1.jpg" alt="Item">
             </div>
             <div class="menu-item-price">$10.95<span> (pint)</span> $14.95 <span>(quart)</span></div>
           </div>
@@ -178,6 +152,41 @@
       <!-- Add after every 2nd menu-item-tile -->
       <div class="clearfix visible-lg-block visible-md-block"></div>
 
+      <div class="menu-item-tile col-md-6" data-item-index="4">
+        <div class="row">
+          <div class="col-sm-5">
+            <div class="menu-item-photo">
+              <div class="menu-item-number">D05</div>
+              <img class="img-responsive menu-item-img" width="250" height="150" src="images/menu/B/B-1.jpg" alt="Item">
+            </div>
+            <div class="menu-item-price">$10.95<span> (pint)</span> $14.95 <span>(quart)</span></div>
+          </div>
+          <div class="menu-item-description col-sm-7">
+            <h3 class="menu-item-title">Veal with Mixed Vegetables</h3>
+            <p class="menu-item-details">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque inventore esse minima incidunt impedit. Asperiores, voluptatem. Sint aspernatur provident, rem odio dolorem eaque voluptatibus modi reprehenderit minima, itaque cupiditate totam.</p>
+          </div>
+        </div>
+        <hr class="visible-xs">
+      </div>
+
+      <div class="menu-item-tile col-md-6" data-item-index="5">
+        <div class="row">
+          <div class="col-sm-5">
+            <div class="menu-item-photo">
+              <div class="menu-item-number">D06</div>
+              <img class="img-responsive menu-item-img" width="250" height="150" src="images/menu/B/B-1.jpg" alt="Item">
+            </div>
+            <div class="menu-item-price">$10.95<span> (pint)</span> $14.95 <span>(quart)</span></div>
+          </div>
+          <div class="menu-item-description col-sm-7">
+            <h3 class="menu-item-title">Veal with Mixed Vegetables</h3>
+            <p class="menu-item-details">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque inventore esse minima incidunt impedit. Asperiores, voluptatem. Sint aspernatur provident, rem odio dolorem eaque voluptatibus modi reprehenderit minima, itaque cupiditate totam.</p>
+          </div>
+        </div>
+        <hr class="visible-xs">
+      </div>
+      <!-- Add after every 2nd menu-item-tile -->
+      <div class="clearfix visible-lg-block visible-md-block"></div>
     </section>
 
   </div><!-- End of #main-content -->

@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>David Chu's China Bistro</title>
+    <title>Specials | David Chu's China Bistro</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/styles.css">
     <link href='https://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>
@@ -37,7 +37,7 @@
 
         <div id="collapsable-nav" class="collapse navbar-collapse">
            <ul id="nav-list" class="nav navbar-nav navbar-right">
-            <li class="active">
+            <li>
               <a href="menu_categories.html">
                 <span class="glyphicon glyphicon-cutlery"></span><br class="hidden-xs"> Menu</a>
             </li>
@@ -72,83 +72,82 @@
     <div id="breadcrumb-bar">
       <ol class="breadcrumb">
         <li><a href="index.html">Home</a></li>
-        <li class="active">Menu</li>
+        <li class="active">Specials</li>
       </ol>
     </div>
 
-    <h2 id="menu-categories-title" class="text-center">Menu Categories</h2>
-    <div class="text-center">Substituting rice with fried rice is a common practice in many Asian cuisines.</div>
+    <div class="text-center">
+      <h2 id="page-title">Today's Specials</h2>
+      <div class="special-subtitle">Chef's hand-picked dishes at special prices &mdash; available all week!</div>
+    </div>
+    <hr class="title-divider">
 
-    <section class="row">
+    <div class="row">
       <div class="col-md-4 col-sm-6 col-xs-12">
-        <a href="single-category.html?category=L">
-          <div class="category-tile" id="cat-L">
-            <span>Lunch</span>
+        <div class="special-item">
+          <div class="special-photo">
+            <span>SP1</span>
+            <img class="img-responsive" width="250" height="150" src="images/menu/Pf/Pf-1.jpg" alt="Special Item">
           </div>
-        </a>
+          <div class="special-label">Special Price $12.95</div>
+          <h3 class="special-title">Kung Pao Chicken</h3>
+          <p class="special-details">A spicy Szechuan favorite with tender chicken, peanuts, and vegetables stir-fried in a bold chili-garlic sauce.</p>
+        </div>
       </div>
+
       <div class="col-md-4 col-sm-6 col-xs-12">
-        <a href="single-category.html?category=D">
-          <div class="category-tile" id="cat-D">
-            <span>Dinner</span>
+        <div class="special-item">
+          <div class="special-photo">
+            <span>SP2</span>
+            <img class="img-responsive" width="250" height="150" src="images/menu/Pf/Pf-2.jpg" alt="Special Item">
           </div>
-        </a>
+          <div class="special-label">Special Price $13.95</div>
+          <h3 class="special-title">Mongolian Beef</h3>
+          <p class="special-details">Crispy-edged beef slices tossed with scallions in a sweet and savory brown sauce, served over steamed jasmine rice.</p>
+        </div>
       </div>
+
       <div class="col-md-4 col-sm-6 col-xs-12">
-        <a href="single-category.html?category=S">
-          <div class="category-tile" id="cat-S">
-            <span>Soups</span>
+        <div class="special-item">
+          <div class="special-photo">
+            <span>SP3</span>
+            <img class="img-responsive" width="250" height="150" src="images/menu/Pf/Pf-3.jpg" alt="Special Item">
           </div>
-        </a>
+          <div class="special-label">Special Price $11.95</div>
+          <h3 class="special-title">Vegetable Lo Mein</h3>
+          <p class="special-details">Egg noodles stir-fried with fresh broccoli, carrots, and mushrooms in a savory soy-based sauce. Available with chicken or tofu.</p>
+        </div>
       </div>
-      <div class="col-md-4 col-sm-6 col-xs-12">
-        <a href="single-category.html?category=A">
-          <div class="category-tile" id="cat-A">
-            <span>Appetizers</span>
-          </div>
-        </a>
-      </div>
-      <div class="col-md-4 col-sm-6 col-xs-12">
-        <a href="single-category.html?category=Ds">
-          <div class="category-tile" id="cat-Ds">
-            <span>Desserts</span>
-          </div>
-        </a>
-      </div>
-      <div class="col-md-4 col-sm-6 col-xs-12">
-        <a href="single-category.html?category=Dr">
-          <div class="category-tile" id="cat-Dr">
-            <span>Drinks</span>
-          </div>
-        </a>
-      </div>
-    </section>
+    </div>
+
+    <div class="text-center specials-note">
+      <a href="menu_categories.html" class="btn btn-warning btn-lg">View Full Menu</a>
+    </div>
   </div><!-- End of #main-content -->
 
   <footer class="panel-footer">
     <div class="container">
       <div class="row">
         <section id="hours" class="col-sm-4">
-          <span>Hours:</span>
-          Mon. - Fri.: 11:00 AM - 10:00 PM <br>
-          Sat. - Sun.: 12:00 PM - 10:00 PM <br>
+          <span>Hours:</span><br>
+          Sun-Thurs: 11:15am - 10:00pm<br>
+          Fri: 11:15am - 2:30pm<br>
+          Saturday Closed
           <hr class="visible-xs">
         </section>
         <section id="address" class="col-sm-4">
-          <span>Location:</span>
-          123 Main St.<br>
-          Anytown, USA<br>
+          <span>Address:</span><br>
+          7105 Reisterstown Road<br>
+          Baltimore, MD 21215
+          <p>* Delivery area within 3-4 miles, with minimum order of $20 plus $3 charge for all deliveries.</p>
           <hr class="visible-xs">
         </section>
         <section id="testimonials" class="col-sm-4">
-          <span>Testimonial:</span>
-           <p>The best food ever! Cause I've been there many times.</p>
-           <em>Sony</em>
+          <p>"The best Chinese restaurant I've been to! And that's saying a lot, since I've been to many!"</p>
+          <p>"Amazing food! Great service! Couldn't ask for more! I'll be back again and again!"</p>
         </section>
       </div>
-      <div class="text-center">
-        &copy; 2026 David Chu's China Bistro
-      </div>
+      <div class="text-center">&copy; Copyright David Chu's China Bistro 2016</div>
     </div>
   </footer>
 
@@ -158,3 +157,4 @@
   <script src="js/script.js"></script>
 </body>
 </html>
+
